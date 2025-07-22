@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-6 {
+    width: 50%;
+    padding: 15px;
+}
+
+.col-3 {
+    width: 25%;
+    padding: 15px;
+}
+
+.col-4 {
+    width: 33.33%;
+    padding: 15px;
+}
+
+.d-flex {
+    display: flex;
+}
+
+/* navbar section start */
+.navbar {
+    background-image: url('../IMAGES/bg.avif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+}
+
+.navbar nav ul li {
+    list-style: none;
+}
+
+.navbar nav ul li a {
+    text-decoration: none;
+    color: inherit;
+    color: #fff;
+}
+
+.navbar nav .search li:last-child a {
+    background-color: #da2b74;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 8px;
+}
+
+.navbar nav .logo img {
+    width: 60px;
+    padding: 5px;
+}
+
+.navbar nav .logo .name h1 {
+    font-weight: bolder;
+    color: #fff;
+}
+
+.navbar nav .logo .name h3 {
+    font-weight: bolder;
+    color: #fff;
+}
+
+.navbar nav .content h1 {
+    font-size: 56px;
+    color: #fff;
+    text-align: right;
+}
+
+.navbar .content a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.navbar nav .content .a1 {
+    background-color: #da2b74;
+    color: #fff;
+    padding: 10px;
+}
+
+.navbar nav .content .a2 {
+    background-color: white;
+    color: #da2b74;
+    padding: 10px;
+}
+
+/* navbar section end */
+
+/* aboutus section start */
+.aboutus .image-items{
+    position: relative;
+}
+.aboutus .image-items .img1 {
+    width: 500px;
+    position: absolute;
+    border-radius: 5px;
+    border: 1px solid #fff;
+}
+
+.aboutus .image-items .img2 {
+    width: 200px;
+    position: absolute;
+    transform: translate(170%,30%);
+    border-radius: 10px;
+    border: 1px solid #fff;
+}
+.aboutus .image-items .img3{
+    width: 200px;
+    position: absolute;
+    transform: translate(-10%,90%);
+    border-radius: 5px;
+    border: 1px solid #fff;
+}
+.aboutus .image-items .img4{
+    width: 200px;
+    position: absolute;
+    transform: translate(170%,80%);
+    border-radius: 5px;
+    border: 1px solid #fff;
+}
+.aboutus .content h3{
+    color: #da2b74;
+    text-align: left;
+    padding-bottom: 7px;
+}
+.aboutus .content hr{
+    width: 90px;
+}
+.aboutus .content h1{
+    font-size: 40px;
+    padding-top: 10px;
+    text-align: left;
+}
+.aboutus .content p{
+    color: #555151;
+    font-size: 20px;
+    padding-top: 10px;
+}
+.aboutus .content .exp .exp1 h1{
+    color: #da2b74;   
+}
+.aboutus .content .exp .exp1 p{
+    text-align: center;
+}
+.aboutus .content .exp .exp1 a{
+
+}
+
+/* aboutus section end */
