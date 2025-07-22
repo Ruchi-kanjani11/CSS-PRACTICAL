@@ -19,9 +19,17 @@ img {
     display: block;
 }
 
+a {
+    text-decoration: none;
+}
+
 .row {
     display: flex;
     flex-wrap: wrap;
+}
+
+.col-12 {
+    width: 100%;
 }
 
 .col-6 {
@@ -43,76 +51,119 @@ img {
     display: flex;
 }
 
-/* navbar section start */
-.navbar {
-    background-image: url('../IMAGES/bg.avif');
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-    display: flex;
+.justify-between {
+    justify-content: space-between;
 }
 
-.navbar nav ul li {
+.justify-content-center {
+    justify-content: center;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+/* navbar section start */
+header {
+    display: inline-block;
+    width: 100%;
+    position: absolute;
+
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .navbar ul li {
     list-style: none;
 }
 
-.navbar nav ul li a {
+nav ul {
+    list-style: none;
+}
+
+nav .menu li {
+    padding: 0px 15px;
+}
+
+nav .menu li a,
+nav .search li a {
     text-decoration: none;
     color: inherit;
     color: #fff;
 }
 
-.navbar nav .search li:last-child a {
+nav .search li:last-child a {
     background-color: #da2b74;
     padding: 10px;
     border-radius: 5px;
     margin: 8px;
 }
 
-.navbar nav .logo img {
-    width: 60px;
-    padding: 5px;
+nav .logo img {
+    width: 90px;
 }
 
-.navbar nav .logo .name h1 {
+nav .logo .name h1 {
     font-weight: bolder;
     color: #fff;
 }
 
-.navbar nav .logo .name h3 {
+nav .logo .name h3 {
     font-weight: bolder;
     color: #fff;
-}
-
-.navbar nav .content h1 {
-    font-size: 56px;
-    color: #fff;
-    text-align: right;
-}
-
-.navbar .content a {
-    text-decoration: none;
-    color: inherit;
-}
-
-.navbar nav .content .a1 {
-    background-color: #da2b74;
-    color: #fff;
-    padding: 10px;
-}
-
-.navbar nav .content .a2 {
-    background-color: white;
-    color: #da2b74;
-    padding: 10px;
 }
 
 /* navbar section end */
 
+/* hero section start */
+.hero {
+    background-image: url('../IMAGES/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    text-align: right;
+    padding: 300px 190px 0px 0px;
+}
+
+.hero .content h1 {
+    font-size: 66px;
+    color: #fff;
+    padding-bottom: 25px;
+    font-weight: 700;
+}
+
+.hero .content a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.hero .content .a1,
+.aboutus .content .exp .exp1 a {
+    background-color: #da2b74;
+    color: #fff;
+    padding: 10px 25px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.hero .content .a2 {
+    background-color: white;
+    color: #da2b74;
+    padding: 10px 25px;
+    font-size: 12px;
+}
+
+/* hero section end */
+
 /* aboutus section start */
-.aboutus .image-items{
+.aboutus .image-items {
     position: relative;
 }
+
 .aboutus .image-items .img1 {
     width: 500px;
     position: absolute;
@@ -123,50 +174,391 @@ img {
 .aboutus .image-items .img2 {
     width: 200px;
     position: absolute;
-    transform: translate(170%,30%);
+    transform: translate(170%, 30%);
     border-radius: 10px;
     border: 1px solid #fff;
 }
-.aboutus .image-items .img3{
+
+.aboutus .image-items .img3 {
     width: 200px;
     position: absolute;
-    transform: translate(-10%,90%);
+    transform: translate(-10%, 90%);
     border-radius: 5px;
     border: 1px solid #fff;
 }
-.aboutus .image-items .img4{
+
+.aboutus .image-items .img4 {
     width: 200px;
     position: absolute;
-    transform: translate(170%,80%);
+    top: 280px;
+    left: 380px;
     border-radius: 5px;
     border: 1px solid #fff;
+    height: 150px;
+    object-fit: cover;
 }
-.aboutus .content h3{
+
+.aboutus .content h3 {
     color: #da2b74;
     text-align: left;
     padding-bottom: 7px;
 }
-.aboutus .content hr{
+
+.aboutus .content hr {
     width: 90px;
 }
-.aboutus .content h1{
-    font-size: 40px;
+
+.aboutus .content h2 {
+    font-size: 55px;
     padding-top: 10px;
     text-align: left;
+    font-weight: 700;
 }
-.aboutus .content p{
+
+.aboutus .content p {
     color: #555151;
     font-size: 20px;
     padding-top: 10px;
 }
-.aboutus .content .exp .exp1 h1{
-    color: #da2b74;   
+
+.aboutus .content .exp {
+    padding-top: 30px;
 }
-.aboutus .content .exp .exp1 p{
+
+.aboutus .content .exp .exp1 {
     text-align: center;
 }
-.aboutus .content .exp .exp1 a{
 
+.aboutus .content .exp .exp1 h3 {
+    color: #da2b74;
+    font-size: 80px;
+    padding: 0;
+    text-align: center;
+}
+
+.aboutus .content .exp .exp1 p {
+    text-align: center;
+    padding-bottom: 45px;
+}
+
+.aboutus .content .exp .exp2 p {
+    padding: 10px 0px 10px 55px;
 }
 
 /* aboutus section end */
+
+/* our services section start */
+.service {
+    margin-top: 80px;
+}
+
+.service .title,
+.pricing .title {
+    text-align: center;
+}
+
+.service .title h3,
+.pricing .title h3 {
+    color: #da2b74;
+    font-size: 30px;
+}
+
+.service .title h2,
+.pricing .title h2 {
+    font-size: 45px;
+    padding-bottom: 35px;
+}
+
+.service .content {
+    margin-top: 25px;
+}
+
+.service .content .card-1,
+.service .content .card-2,
+.service .content .card-3,
+.service .content .card-4 {
+    height: 400px;
+    transition: 0.4s;
+    border-radius: 10px;
+}
+
+.service .content .card-1:hover,
+.service .content .card-2:hover,
+.service .content .card-3:hover,
+.service .content .card-4:hover {
+    background-color: #555151;
+    transform: translateY(-10px);
+}
+
+.service .content .card-1 img,
+.service .content .card-2 img,
+.service .content .card-3 img,
+.service .content .card-4 img {
+    width: 100px;
+}
+
+.service .content .card-1 h4,
+.service .content .card-2 h4,
+.service .content .card-3 h4,
+.service .content .card-4 h4 {
+    text-align: left;
+    padding-top: 30px;
+    font-size: 25px;
+    color: #da2b74;
+    padding-bottom: 180px;
+}
+
+.service .content .card-2 h4,
+.service .content .card-3 h4,
+.service .content .card-4 h4 {
+    padding-bottom: 20px;
+}
+
+.service .content .card-2 p,
+.service .content .card-3 p,
+.service .content .card-4 p {
+    text-align: left;
+    line-height: 1.5;
+    font-weight: 100;
+    padding-bottom: 90px;
+}
+
+.service .content .card-1 .btn,
+.service .content .card-2 .btn,
+.service .content .card-3 .btn,
+.service .content .card-4 .btn {
+    text-align: left;
+}
+
+.service .content .card-1 .btn a,
+.service .content .card-2 .btn a,
+.service .content .card-3 .btn a,
+.service .content .card-4 .btn a {
+    color: #3f3f40;
+
+}
+
+.service .content .card-1 .btn a i,
+.service .content .card-2 .btn a i,
+.service .content .card-3 .btn a i,
+.service .content .card-4 .btn a i {
+    padding-left: 10px;
+}
+
+/* our services section end */
+
+/* Pricing section start */
+.pricing {
+    margin-top: 45px;
+}
+
+.pricing .content .offer-1,
+.pricing .content .offer-2,
+.pricing .content .offer-3,
+.pricing .content .offer-4 {
+    padding: 45px 50px;
+    text-align: center;
+    transition: 0.5s;
+    width: 300px;
+    height: 350px;
+    border-radius: 10px;
+}
+
+.pricing .content .offer-1:hover,
+.pricing .content .offer-2:hover,
+.pricing .content .offer-3:hover,
+.pricing .content .offer-4:hover {
+    background-color: #555151;
+    color: whitesmoke;
+}
+
+.pricing .content .offer-1:hover .btn,
+.pricing .content .offer-2:hover .btn,
+.pricing .content .offer-3:hover .btn,
+.pricing .content .offer-4:hover .btn {
+    background-color: whitesmoke;
+}
+
+.pricing .content .offer-1:hover .btn a,
+.pricing .content .offer-2:hover .btn a,
+.pricing .content .offer-3:hover .btn a,
+.pricing .content .offer-4:hover .btn a {
+    color: black;
+}
+
+.pricing .content .offer-1 h4,
+.pricing .content .offer-2 h4,
+.pricing .content .offer-3 h4,
+.pricing .content .offer-4 h4 {
+    font-size: 15px;
+    padding-bottom: 15px;
+}
+
+.pricing .content .offer-1 .price,
+.pricing .content .offer-2 .price,
+.pricing .content .offer-3 .price,
+.pricing .content .offer-4 .price {
+    background-color: #da2b74;
+    padding: 10px 30px;
+    display: inline-block;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.pricing .content .offer-1 .price a,
+.pricing .content .offer-2 .price a,
+.pricing .content .offer-3 .price a,
+.pricing .content .offer-4 .price a {
+    color: whitesmoke;
+    font-size: 15px;
+    font-weight: 900;
+}
+
+.pricing .content .offer-1 p,
+.pricing .content .offer-2 p,
+.pricing .content .offer-3 p,
+.pricing .content .offer-4 p {
+    line-height: 2.5;
+    font-weight: 200;
+    padding-bottom: 15px;
+}
+
+.pricing .content .offer-3 p {
+    line-height: 1.9;
+}
+
+.pricing .content .offer-1 .btn,
+.pricing .content .offer-2 .btn,
+.pricing .content .offer-3 .btn,
+.pricing .content .offer-4 .btn {
+    background-color: #da2b74;
+    padding: 10px 35px;
+    display: inline-block;
+}
+
+.pricing .content .offer-1 .btn a,
+.pricing .content .offer-2 .btn a,
+.pricing .content .offer-3 .btn a,
+.pricing .content .offer-4 .btn a {
+    color: whitesmoke;
+    font-weight: 900;
+    font-size: 12px;
+}
+
+/* Pricing section end */
+
+/* footer section start */
+
+footer {
+    background-color: #2b2f47;
+    margin-top: 50px;
+}
+
+footer .about-info .logo img {
+    width: 100px;
+}
+
+footer .about-info .logo h2 {
+    font-size: 30px;
+    font-weight: 800;
+    color: whitesmoke;
+}
+
+footer .about-info .logo h3 {
+    font-size: 20px;
+    font-weight: 800;
+    color: whitesmoke;
+}
+
+footer .about-info p {
+    padding: 15px 20px;
+    font-weight: 600;
+    color: whitesmoke;
+}
+
+footer .about-info .icon {
+    padding: 15px 20px;
+    color: whitesmoke;
+}
+
+footer .about-info .icon i {
+    padding-left: 10px;
+    font-size: 25px;
+}
+
+footer .info {
+    padding: 20px 0;
+}
+
+footer .info h4,
+footer .service-info h4 {
+    font-size: 25px;
+    color: #da2b74;
+    font-weight: 700;
+    padding-bottom: 15px;
+    text-align: left;
+}
+
+footer .info p {
+    color: whitesmoke;
+    padding: 15px 0px;
+}
+
+footer .info p i {
+    color: #da2b74;
+    padding-right: 5px;
+}
+
+footer .info hr,
+footer .service-info hr {
+    border-color: #89898a;
+}
+
+footer .service-info {
+    padding: 20px 0;
+}
+
+footer .service-info ul li {
+    color: whitesmoke;
+    font-weight: 700;
+    padding: 15px 0px;
+}
+
+footer .service-info ul {
+    list-style: none;
+}
+
+footer h4 {
+    text-align: center;
+    font-size: 25px;
+    color: #da2b74;
+    font-weight: 700;
+    padding-bottom: 15px;
+}
+
+footer .gallery .img-1,
+footer .gallery .img-2,
+footer .gallery .img-3,
+footer .gallery .img-4,
+footer .gallery .img-5,
+footer .gallery .img-6 {
+    width: 90px;
+    height: 90px;
+    border-radius: 10px;
+}
+
+footer .content {
+    text-align: center;
+    padding: 20px 0px;
+}
+
+footer .content p {
+    color: whitesmoke;
+    font-weight: 700;
+}
+
+footer .content p span {
+    color: #da2b74;
+    padding-left: 5px;
+}
+/* footer section end */
